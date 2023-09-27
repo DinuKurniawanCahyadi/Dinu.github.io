@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+header{
+    width: 100%;
+}
+.logo{
+    font-size: 42px;
+    font-family: 'comic sans ms';
+    font-weight: 300;
+    align-items: center;
+    font-style: oblique;
+}
+.container ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 15px;
+
+}
+ul li a{
+    font-size: 21px;
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    font-weight: 800;
+}
+ul li::after{
+    content: "";
+    bottom: 8px;
+    height: 3px;
+    background-color: black;
+    left: 0;
+    width: 0;
+    position: absolute;
+    transition: .8s;
+}
+ul li:hover::after{
+    width: 100%;
+}
+.content-icon{
+    margin: 15% auto;
+    width: 100%;
+    display: flex;
+}
+.icon{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 50px;
+}
+.icon i{
+    margin: 10px 0;
+    color: grey;
+    font-size: 22px;
+    cursor: pointer;
+}
+.icon i:hover{
+    color: black;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    margin-top: -15px;
+}
+.content h2{
+    font-size: 32px;
+    color: grey;
+    margin-bottom: 10px;
+}
+.content h3{
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.content p{
+    font-size: 18px;
+    color: grey;
+    margin: 5px 0;
+    font-weight: bold;
+    font-style: italic;
+}
+.img{
+    margin-top: -20px;
+    padding: 5px;
+    background: transparent;
+}
+.img img{
+    border-radius: 70px;
+    width: 250px;
+    height: 190px;
+}
